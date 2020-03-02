@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Freela - He4rtDevs</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <header class="head">
+        <ul>
+            <li><a href="index.html">Calculadora</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="http://github.com/dreuzinho/calculadora-freela">RepoGit</a></li>
+        </ul>
+    </header>
+
+    <div class="row">
+        <section class="container">
+            <div>
+                <div class="card card-1">
+                    <div class="colorcard"></div>
+                    <div class="text">Quantidade de<br /> horas trabalhadas<br /> por dia.</div>
+                    <form>
+                        <input class="form1" type="text" onkeyup="somenteNumeros(this);" placeholder="0" id="horasdiarias" onblur="calcular(); " />
+                    </form>
+                    <div class="textsub">horas/dia</div>
+                </div>
+
+                <div class="card card-1">
+                    <div class="colorcard"></div>
+                    <div class="text">
+                        Dias efetivos<br /> trabalhados na<br /> semana.
+                    </div>
+                    <form>
+                        <input class="form1" type="text" onkeyup="somenteNumeros(this);" placeholder="0" id="diasefetivos" onfocus="calcular();" />
+                    </form>
+                    <div class="textsub">dias</div>
+                </div>
+        </section>
+        <section class="container">
+            <div class="card card-1">
+                <div class="colorcard"></div>
+                <div class="text">Dias De Férias<br /> pelo Trabalho.</div>
+                <form>
+                    <input class="form2" type="text" onkeyup="somenteNumeros(this);" placeholder="0" id="diaferias" onfocus="calcular();" />
+                </form>
+                <div class="textsub">dias</div>
+            </div>
+
+            <div class="card card-1">
+                <div class="colorcard"></div>
+                <div class="text">Valor total do<br /> Projeto.
+                </div>
+                <form>
+                    <input class="form2" type="text" onkeyup="somenteNumeros(this);" placeholder="0" id="valorprojeto" onfocus="calcular();" />
+                </form>
+                <div class="textsub">R$</div>
+            </div>
+        </section>
+        </div>
+
+        <div>
+            <div class="card1 card-2">
+                <div class="colorcard2"></div>
+                <div class="text2">Valor da sua hora<br/> no Freela.
+                </div>
+                <div>
+                    <input id="result" type="text" class="restxt" placeholder="0" />
+                </div>
+                <div class="textsub2">R$ por hora</div>
+            </div>
+            <input type="submit" onclick="calculoFreela()" value="Enviar">
+        </div>
+</body>
+<footer>
+    <div>
+        <img src="../assets/logo-he4rt2.png" alt="He4rt Logo" height="64" width="200" />
+    </div>
+</footer>
+
+</html>
